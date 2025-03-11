@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            height: 100%;
+            background-color: #1f2b30;
+            color: white;
+        }
+        .container-fluid {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .column-1 {
+            height: 15vh;
+            overflow: hidden;
+            padding: 0 2vw;
+            width: 100%;
+        }
+        .column-2 { height: 35vh; }
+        .column-3 { height: 30vh; }
+        .column-4 { height: 15vh; }
+        
+        .responsive-image {
+            width: 80vw;
+            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .responsive-image2 {
+            width: 80vw;
+            height: auto;
+            max-height: 50%;
+            object-fit: contain;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-button {
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="column column-1 p-3"> 
+            <img src="images/header-removebg-preview.png" alt="Women's Day Banner" class="responsive-image2">
+        </div>
+        <div class="column column-2 p-3">
+            <img src="images/image-removebg-preview.png" alt="Women's Day Banner" class="responsive-image">
+        </div>
+        <div class="column column-3 p-3">
+            <img src="images/gaikwadCorp_header.png" alt="Women's Day Banner" class="responsive-image"> 
+        </div>
+        <div class="column column-4 p-3">
+            <img src="images/WhatsApp-Image-2025-03-06-at-11.15.16-AM (1).jpg" alt="Women's Day Banner" class="responsive-image"> 
+        </div>
+    </div>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/0053d4a2f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
